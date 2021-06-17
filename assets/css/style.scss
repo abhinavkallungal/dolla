@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primary-color:#00bf6d;
+    --secondary-color:#131313;
+    --text-color:#eee;
+    --white-color:#fff;
+    --black-color:#000;
+    --theme-font:'Poppins';
+}
+.primary-color{
+    color: var(--primary-color);
+}
+
+.btn-theme{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    font-family:"Poppins";
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: .3rem 1.5rem ;
+    transition: .5s ease;
+    
+    &:hover{
+      color: var(--white-color);  
+    //box-shadow: 0px 0px 16px 4px var(--primary-color );
+        
+    }
+
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+#header{
+     
+    font-family: var(--theme-font);
+    .navbar{
+        z-index: 1000;
+       
+        background-color: var(--secondary-color);
+        
+        .navbar-brand{
+            color: var(--white-color);
+            font-size: 30px;
+            font-weight: 600;
+            transition: .5s ease;
+            
+            &:hover{
+                color: var(--primary-color);
+                
+            }
+        }
+        .fa-bars{
+            color: var(--white-color);
+        }
+        .collapse{
+        ul{
+            li{
+                margin: 0rem .5rem;
+                a{
+                    color: var(--text-color);
+                    font-weight: 500;
+                    
+                    .active{
+                        color: var(--primary-color);
+                    }
+                }
+                &:hover a{
+                    color: var(--primary-color);
+                }
+                .active{
+                    color: var(--primary-color);
+                }
+            }
+         }
+        }
+    }
+    
+}
+.mid{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+
+    video{
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        
+      
+    }
+
+    .hero{
+        width: 60%;
+        position: relative;
+        
+    }
+}
+
+.about{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 4rem 0rem;
+    font-family: var(--theme-font);
+    
+    .image{
+        width: 100%;
+        margin-top: 2rem; 
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .h4{
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 18px;
+    }
+    p{
+        color: var(--text-color);
+    }
+}
+
+.discover{
+    background-color:var(--white-color);
+    color: var(--black-color);
+    padding: 4rem 0rem;
+    font-family: var(--theme-font);
+    
+    .image{
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .h4{
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 18px;
+    }
+    p{
+        color: var(--secondary-color);
+    }
+    .btn-theme{
+        color: var(--white-color);
+        
+        &:hover{
+            color: var(--secondary-color);
+        }
+    }
+
+}
+
+.service{
+    background-color: var(--secondary-color);
+    padding: 4rem 0rem;
+
+    .card{
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px ;
+
+        
+    }
+}
+
+.signup{
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    padding: 4rem 0rem;
+    font-family: var(--theme-font);
+    
+    .image{
+        width: 100%;
+        margin-top: 2rem; 
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .h4{
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .btn-theme{
+        color: var(--white-color);
+        
+        &:hover{
+            color: var(--black-color);
+        }
+    }
+    
+}
+
+footer{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    ul{
+        li{
+            a{
+                color: var(--white-color);
+                text-decoration: none;
+            }
+            &:hover a{
+                color: var(--primary-color);
+            }
+        }
+    }
+    .copyright{
+        background-color: var(--white-color);
+        color: var(--secondary-color);
+        a{
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    }
+}
